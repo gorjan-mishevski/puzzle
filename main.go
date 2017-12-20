@@ -1,4 +1,4 @@
-package main
+package puzzle
 
 import (
 	"encoding/json"
@@ -8,8 +8,6 @@ import (
 	"net/http"
 	"strings"
 	"time"
-
-	"github.com/davecgh/go-spew/spew"
 )
 
 // Get the price.
@@ -32,10 +30,6 @@ import (
 var (
 	baseHref = "https://min-api.cryptocompare.com/data"
 )
-
-func main() {
-	spew.Dump(BaseAgainsMultiPrice("USD", []string{"ETH", "BTC", "LTC"}))
-}
 
 // MultiPrice - Calculates the value for the searched currency. Return example: unpacked["ETH"]["USD"] gives the value ETH -> USD.
 func MultiPrice(from []string, to []string) (unpacked map[string]map[string]float64) {
