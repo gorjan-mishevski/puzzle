@@ -65,21 +65,21 @@ func MultiPrice(from []string, to []string) (unpacked map[string]map[string]floa
 	return
 }
 
-type currency struct {
+type Currency struct {
 	base  string
 	rates map[string]float64
 }
 
-func (c *currency) GetBase() string {
+func (c *Currency) GetBase() string {
 	return c.base
 }
 
-func (c *currency) GetRates() map[string]float64 {
+func (c *Currency) GetRates() map[string]float64 {
 	return c.rates
 }
 
 // BaseAgainsMultiPrice - Given a base currency it will load the corresponding rate value. Ex: "USD"(1$) -> "ETH"(0.00X), "BTC(0.00X)"
-func BaseAgainsMultiPrice(base string, to []string) currency {
+func BaseAgainsMultiPrice(base string, to []string) *Currency {
 	url := fmt.Sprintf("%s/pricemulti?fsyms=%s&tsyms=%s", baseHref, base, strings.Join(to, ","))
 
 	client := http.Client{
@@ -110,7 +110,7 @@ func BaseAgainsMultiPrice(base string, to []string) currency {
 		log.Fatal("Failed unmarshaling data. \n", err)
 	}
 
-	sanitizedCurrency := currency{
+	sanitizedCurrency := &Currency{
 		base:  base,
 		rates: make(map[string]float64),
 	}
