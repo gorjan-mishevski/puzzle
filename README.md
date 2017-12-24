@@ -45,12 +45,38 @@ response := puzzle.MultiPrice([]string{"USD", "EUR"}, []string{"ETH", "BTC"})
 Response:
 ```
 response <map[string]map[string]float64>
-        "USD": map[string]float64
+        "USD": <map[string]float64>
                 "ETH": 0.0000034
                 "BTC": 0.0000000344
-        "EUR": map[string]float64
+        "EUR": <map[string]float64>
                 "ETH": 0.0000034
                 "BTC": 0.0000000344
+```
+<hr>
+Now let's get more complicated. Let's say we want a complete trading information with dynamic to -> from currencies.
+```go
+response := puzzle.MultiPriceTradingInfo([]string{"USD", "EUR"}, []string{"ETH", "BTC"})
+```
+
+Response:
+```
+response <puzzle.MultiPriceMarket>
+        "RAW": <map[string]puzzle.MultiPriceFrom>
+                "USD": <puzzle.MultiPriceFrom>
+                        From: "USD"
+                        To: <map[string]puzzle.MultiPriceTo>
+                                "ETH": <puzzle.MultiPriceTo>
+                                        Name: "ETH"
+                                        Field: <map[string]interface{}>
+                                                ... Here we have random field data.
+                                                For now they are as interface but they can be
+                                                mapped.
+                                "BTC": <puzzle.MultiPriceTo>
+                                        ...
+                "EUR": <puzzle.MultiPriceFrom>
+                        ...
+                        
+        "DYNAMIC": ...
 ```
 
 
