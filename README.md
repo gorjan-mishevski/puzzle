@@ -16,7 +16,7 @@ go get github.com/gorjan-mishevski/puzzle
 
 # Usage
 
-<h3> Example 1. </h3>
+<h3> Example 1 </h3>
 Let's start simple. Get the current value from a given currency.<br>
 EX: I want to know what is the rate from US to ETH, BTC.<br><br>
 <b>1 USD dollar</b> 💵 <b>-> ETH</b> 💎
@@ -36,6 +36,7 @@ response <*puzzle.Currency>
                 ["BTC"]: 0.000002355
 ```
 <hr>
+<h3> Example 2 </h3>
 Let's see how to get from multiple currencies to multiples rates.<br>
 
 ```go
@@ -55,6 +56,7 @@ response <map[string]map[string]float64>
                 "BTC": 0.0000000344
 ```
 <hr>
+<h3> Example 3 </h3>
 Now let's get more complicated. Let's say we want a complete trading information with dynamic to -> from currencies.
 <br>
 ```go
