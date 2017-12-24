@@ -51,7 +51,7 @@ func MultiPriceTradingInfo(from []string, to []string) MultiPriceMarket {
 					Field: val,
 				}
 
-				sliceMulPriceCrypt = map[string]MultiPriceTo{mulPriceCrypt.Name: mulPriceCrypt}
+				sliceMulPriceCrypt[mulPriceCrypt.Name] = mulPriceCrypt
 			}
 
 			mulPriceCurr := MultiPriceFrom{
