@@ -58,7 +58,7 @@ Now let's get more complicated. Let's say we want a complete trading information
 response := puzzle.MultiPriceTradingInfo([]string{"USD", "EUR"}, []string{"ETH", "BTC"})
 ```
 
-Response:
+Response:<br>
 ```
 response <puzzle.MultiPriceMarket>
         "RAW": <map[string]puzzle.MultiPriceFrom>
