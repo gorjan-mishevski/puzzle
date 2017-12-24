@@ -59,6 +59,7 @@ response <map[string]map[string]float64>
 <h3> Example 3 </h3>
 Now let's get more complicated. Let's say we want a complete trading information with dynamic to -> from currencies.
 <br>
+
 ```go
 response := puzzle.MultiPriceTradingInfo([]string{"USD", "EUR"}, []string{"ETH", "BTC"})
 ```
