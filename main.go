@@ -31,6 +31,10 @@ var (
 	baseHref = "https://min-api.cryptocompare.com/data"
 )
 
+func main() {
+	BaseAgainsMultiPrice("USD", []string{"ETH"})
+}
+
 // MultiPrice - Calculates the value for the searched currency. Return example: unpacked["ETH"]["USD"] gives the value ETH -> USD.
 func MultiPrice(from []string, to []string) (unpacked map[string]map[string]float64) {
 	url := fmt.Sprintf("%s/pricemulti?fsyms=%s&tsyms=%s", baseHref, strings.Join(from, ","), strings.Join(to, ","))
@@ -65,15 +69,18 @@ func MultiPrice(from []string, to []string) (unpacked map[string]map[string]floa
 	return
 }
 
+// Currency - Normalized return data from BaseAgainsMultiPrice.
 type Currency struct {
 	base  string
 	rates map[string]float64
 }
 
+// GetBase - Returns the base currency we are asking for rates. Ex: Base = "USD".
 func (c *Currency) GetBase() string {
 	return c.base
 }
 
+// GetRates - Returns the rates from the base currency to the requested ones. Ex: Base "USD" to "BTH, LIT"
 func (c *Currency) GetRates() map[string]float64 {
 	return c.rates
 }
