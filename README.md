@@ -15,6 +15,8 @@ go get github.com/gorjan-mishevski/puzzle
 ```
 
 # Usage
+
+<h3> Example 1. </h3>
 Let's start simple. Get the current value from a given currency.<br>
 EX: I want to know what is the rate from US to ETH, BTC.<br><br>
 <b>1 USD dollar</b> 💵 <b>-> ETH</b> 💎
