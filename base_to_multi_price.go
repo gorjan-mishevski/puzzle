@@ -13,13 +13,13 @@ type Currency struct {
 	rates map[string]float64
 }
 
-// GetBase - Returns the base currency we are asking for rates. Ex: Base = "USD".
-func (c *Currency) GetBase() string {
+// Base - Returns the base currency we are asking for rates. Ex: Base = "USD".
+func (c *Currency) Base() string {
 	return c.base
 }
 
-// GetRates - Returns the rates from the base currency to the requested ones. Ex: Base "USD" to "BTH, LIT"
-func (c *Currency) GetRates() map[string]float64 {
+// Rates - Returns the rates from the base currency to the requested ones. Ex: Base "USD" to "BTH, LIT"
+func (c *Currency) Rates() map[string]float64 {
 	return c.rates
 }
 
