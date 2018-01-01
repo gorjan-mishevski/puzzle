@@ -12,8 +12,8 @@
          <a href="https://godoc.org/github.com/gorjan-mishevski/puzzle">
                 <img src="https://img.shields.io/badge/go-documentation-blue.svg?style=flat-square">
         </a>
-        <a href="https://img.shields.io/badge/License-MIT-yellow.svg">
-                <img src="https://opensource.org/licenses/MIT">
+        <a href="https://opensource.org/licenses/MIT">
+                <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
         </a>
 </p>
      
