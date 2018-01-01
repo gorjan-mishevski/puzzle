@@ -9,8 +9,14 @@
         <a href="https://goreportcard.com/report/github.com/gorjan-mishevski/puzzle">
                 <img src="https://goreportcard.com/badge/github.com/gorjan-mishevski/puzzle">
         </a>
+         <a href="https://godoc.org/github.com/gorjan-mishevski/puzzle">
+                <img src="https://img.shields.io/badge/go-documentation-blue.svg?style=flat-square">
+        </a>
+        <a href="https://img.shields.io/badge/License-MIT-yellow.svg">
+                <img src="https://opensource.org/licenses/MIT">
+        </a>
 </p>
-
+     
 # PUZZLE
 Golang CryptoCompare library
 
