@@ -1,3 +1,4 @@
+[![Go Report Card](https://goreportcard.com/badge/github.com/gorjan-mishevski/puzzle)](https://goreportcard.com/report/github.com/gorjan-mishevski/puzzle)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # PUZZLE
