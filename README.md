@@ -1,9 +1,7 @@
 # PUZZLE
 Golang CryptoCompare library
 
-# Why
-If you are searching for a nice wrapper library that used CryptoCompare API this is the one. ☝️ 
-I was not satisfied with how dynamic and unpredicted the API response was plus Go being a statically typed language you waste time configuring and normalizing data before you can actually use it.
+If you are searching for a nice wrapper library that used CryptoCompare API this is the one. ☝️
 
 This library has a lot of struct's (or type asserted response instead of interface{}) that extend the response, thus ensuring nice clean access to the data and providing easy way to add more functionalities with methods on the structs.
 
