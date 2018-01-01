@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-// MultiPriceMarket - Containes the outermost layer of the response.
+// MultiPriceMarket - Contains the outermost layer of the response.
 type MultiPriceMarket struct {
 	// Type - This can be Ex: "RAW" or "DISPLAY"
 	Type map[string]map[string]MultiPriceFrom
