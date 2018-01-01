@@ -1,7 +1,7 @@
 
 <p align="center">
         <a href="https://ibb.co/fH5Azw" target="_blank">
-                <img width="350" src="https://preview.ibb.co/ejVcew/Puzzle_Crypto_Logo.png" alt="Puzzle_Crypto_Logo" border="0">
+                <img width="300" src="https://preview.ibb.co/ejVcew/Puzzle_Crypto_Logo.png" alt="Puzzle_Crypto_Logo" border="0">
         </a>
 </p>
 
