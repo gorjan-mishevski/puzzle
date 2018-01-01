@@ -1,9 +1,26 @@
+
+<p align="center">
+        <a href="https://ibb.co/fH5Azw" target="_blank">
+                <img width="300" src="https://preview.ibb.co/ejVcew/Puzzle_Crypto_Logo.png" alt="Puzzle_Crypto_Logo" border="0">
+        </a>
+</p>
+
+<p align="center">
+        <a href="https://goreportcard.com/report/github.com/gorjan-mishevski/puzzle">
+                <img src="https://goreportcard.com/badge/github.com/gorjan-mishevski/puzzle">
+        </a>
+         <a href="https://godoc.org/github.com/gorjan-mishevski/puzzle">
+                <img src="https://img.shields.io/badge/go-documentation-blue.svg?style=flat-square">
+        </a>
+        <a href="https://opensource.org/licenses/MIT">
+                <img src="https://img.shields.io/badge/License-MIT-green.svg">
+        </a>
+</p>
+     
 # PUZZLE
 Golang CryptoCompare library
 
-# Why
-If you are searching for a nice wrapper library that used CryptoCompare API this is the one. ☝️ 
-I was not satisfied with how dynamic and unpredicted the API response was plus Go being a statically typed language you waste time configuring and normalizing data before you can actually use it.
+If you are searching for a nice wrapper library that used CryptoCompare API this is the one. ☝️
 
 This library has a lot of struct's (or type asserted response instead of interface{}) that extend the response, thus ensuring nice clean access to the data and providing easy way to add more functionalities with methods on the structs.
 
