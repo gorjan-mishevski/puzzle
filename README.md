@@ -1,6 +1,15 @@
-[![Go Report Card](https://goreportcard.com/badge/github.com/gorjan-mishevski/puzzle)](https://goreportcard.com/report/github.com/gorjan-mishevski/puzzle)
-[![GoDoc](https://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://godoc.org/github.com/gorjan-mishevski/puzzle)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+<p align="center">
+        <a href="https://ibb.co/fH5Azw" target="_blank">
+                <img width="350" src="https://preview.ibb.co/ejVcew/Puzzle_Crypto_Logo.png" alt="Puzzle_Crypto_Logo" border="0">
+        </a>
+</p>
+
+<p align="center">
+        <a href="https://goreportcard.com/report/github.com/gorjan-mishevski/puzzle">
+                <img src="https://goreportcard.com/badge/github.com/gorjan-mishevski/puzzle">
+        </a>
+</p>
 
 # PUZZLE
 Golang CryptoCompare library
