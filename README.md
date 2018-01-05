@@ -104,6 +104,7 @@ response <puzzle.MultiPriceMarket>
 <hr>
 <h3> Example 4 </h3>
 If we want to check the value for a given day we can try this.
+<br>
 ```go
 response := puzzle.PriceHistoryByDay("USD", []string{"ETH", "BTC"}, 1452680400)
 ```
