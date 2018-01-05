@@ -110,9 +110,9 @@ If we want to check the value for a given day we can try this.
 response := puzzle.PriceHistoryByDay("USD", []string{"ETH", "BTC"}, 1452680400)
 ```
 
-1st Argument is the base we want to converto from.
-2nd Argument the currency we want to get it's rate.
-3rd Argument is the timestamp. Note, it will get the price at the end of the day GMT based on the requested timestamp.
+1st Argument is the base we want to converto from.<br>
+2nd Argument the currency we want to get it's rate.<br>
+3rd Argument is the timestamp. Note, it will get the price at the end of the day GMT based on the requested timestamp.<br>
 
 Response:
 
