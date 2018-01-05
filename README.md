@@ -74,6 +74,29 @@ response <map[string]map[string]float64>
 ```
 <hr>
 <h3> Example 3 </h3>
+We can check the rates for a given day.
+<br>
+
+```go
+response := puzzle.PriceHistoryByDay("USD", []string{"ETH", "BTC"}, 1452680400)
+```
+
+1st Argument is the base we want to converto from.<br>
+2nd Argument the currency we want to get it's rate.<br>
+3rd Argument is the timestamp. Note, it will get the price at the end of the day GMT based on the requested timestamp.<br>
+
+Response:
+
+```
+response <*puzzle.Currency>
+        base: "USD"
+        rates: <map[string]float64>
+                ["ETH"]: 0.001556
+                ["BTC"]: 0.000002355
+```
+<hr>
+
+<h3> Example 4 </h3>
 Now let's get more complicated. Let's say we want a complete trading information with dynamic to -> from currencies.
 <br>
 
@@ -102,24 +125,3 @@ response <puzzle.MultiPriceMarket>
         "DYNAMIC": ...
 ```
 <hr>
-<h3> Example 4 </h3>
-If we want to check the value for a given day we can try this.
-<br>
-
-```go
-response := puzzle.PriceHistoryByDay("USD", []string{"ETH", "BTC"}, 1452680400)
-```
-
-1st Argument is the base we want to converto from.<br>
-2nd Argument the currency we want to get it's rate.<br>
-3rd Argument is the timestamp. Note, it will get the price at the end of the day GMT based on the requested timestamp.<br>
-
-Response:
-
-```
-response <*puzzle.Currency>
-        base: "USD"
-        rates: <map[string]float64>
-                ["ETH"]: 0.001556
-                ["BTC"]: 0.000002355
-```
