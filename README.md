@@ -1,6 +1,6 @@
 
 <p align="center">
-        <a href="https://ibb.co/fH5Azw" target="_blank">
+        <a href="https://github.com/gorjan-mishevski/puzzle" target="_blank">
                 <img width="300" src="https://preview.ibb.co/ejVcew/Puzzle_Crypto_Logo.png" alt="Puzzle_Crypto_Logo" border="0">
         </a>
 </p>
