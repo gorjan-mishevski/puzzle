@@ -41,8 +41,8 @@ EX: I want to know what is the rate from US to ETH, BTC.<br><br>
 ```go
 response := puzzle.BaseAgainsMultiPrice("USD", []string{"ETH", "BTC"})
 ```
-1 Argument is the currency you take as base. <br>
-2 Argument is a slice of currencies you want the rate.
+1st Argument is the currency you take as base. <br>
+2nd Argument is a slice of currencies you want the rate.
 
 Response:
 ```
@@ -59,8 +59,8 @@ Let's see how to get from multiple currencies to multiples rates.<br>
 ```go
 response := puzzle.MultiPrice([]string{"USD", "EUR"}, []string{"ETH", "BTC"})
 ```
-1 Argument wants a slice of currencies to be taken as base.<br>
-2 Argument is a slice of currencies you want the rate.<br>
+1st Argument wants a slice of currencies to be taken as base.<br>
+2nd Argument is a slice of currencies you want the rate.<br>
 
 Response:
 ```
@@ -102,5 +102,18 @@ response <puzzle.MultiPriceMarket>
         "DYNAMIC": ...
 ```
 <hr>
-To be continued...
-
+<h3> Example 4 </h3>
+If we want to check the value for a given day we can try this.
+```go
+response := puzzle.PriceHistoryByDay("USD", []string{"ETH", "BTC"})
+```
+1st Argument is the base we want to converto from.
+2nd Argument the currency we want to get it's rate.
+Response:
+```
+response <*puzzle.Currency>
+        base: "USD"
+        rates: <map[string]float64>
+                ["ETH"]: 0.001556
+                ["BTC"]: 0.000002355
+```
