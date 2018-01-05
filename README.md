@@ -105,10 +105,11 @@ response <puzzle.MultiPriceMarket>
 <h3> Example 4 </h3>
 If we want to check the value for a given day we can try this.
 ```go
-response := puzzle.PriceHistoryByDay("USD", []string{"ETH", "BTC"})
+response := puzzle.PriceHistoryByDay("USD", []string{"ETH", "BTC"}, 1452680400)
 ```
 1st Argument is the base we want to converto from.
 2nd Argument the currency we want to get it's rate.
+3rd Argument is the timestamp. Note, it will get the price at the end of the day GMT based on the requested timestamp.
 Response:
 ```
 response <*puzzle.Currency>
